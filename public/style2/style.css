@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 10%;
+}
+
+/* Header */
+
+hgroup h1 {
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    padding: 0 0 30px 0;
+    margin-bottom: 0;
+}
+
+hgroup h2, #about h3, #contact h3, .contact-skype, .contact-type, .contact-value {
+    display: none;
+}
+
+header img {
+    width: 200px;
+    position: absolute;
+    top: 8%;
+    right: 15%;
+    transform: rotate( -15deg);
+}
+
+/* Content */
+
+#about p {
+    font-style: italic;
+    color: #aaa;
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 10%;
+}
+
+#experiences, #education, #competencies, #hobbies {
+    display: grid;
+    grid-template-columns: 125px auto;
+    grid-template-rows: auto auto;
+    margin: 50px 0;
+}
+
+#competencies h3, #education h3, #hobbies h3, #experiences h3 {
+    grid-row: 1/3;
+    font-style: italic;
+    font-weight: bold;
+    border-right: 1.5px solid #000;
+    margin: 0;
+}
+
+/* Skills */
+
+.skills-primary, .skills-secondary {
+    display: flex;
+    margin-left: 10px;
+}
+
+.skill {
+    padding: 8px 10px;
+    margin: 3px;
+    background-color: #008080;
+    color: #fff;
+    width: 17%;
+}
+
+.skills-secondary .skill {
+    font-size: 12px;
+}
+
+.skill[data-skill='1']::after, .skill[data-skill='2']::after {
+    content: '★';
+    float: right;
+}
+
+.skill[data-skill='3']::after, .skill[data-skill='4']::after {
+    content: '★★';
+    float: right;
+}
+
+.skill[data-skill='5']::after, .skill[data-skill='6']::after {
+    content: '★★★';
+    float: right;
+}
+
+.skill[data-skill='7']::after, .skill[data-skill='8']::after {
+    content: '★★★★';
+    float: right;
+}
+
+.skill[data-skill='9']::after, .skill[data-skill='10']::after {
+    content: '★★★★★';
+    float: right;
+}
+
+/* Experience */
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin-left: 10px;
+}
+
+.experience-details {
+    text-align: end;
+}
+
+.experience-description {
+    grid-column: 1/3;
+}
+
+.experience h4 {
+    margin-top: 0;
+}
+
+.experience h4 {
+    color: #008080;
+    margin-bottom: 0;
+}
+
+.experience-institution {
+    font-weight: normal;
+}
+
+.experience-institution::before {
+    content: '@ ';
+}
+
+.experience-details {
+    color: #aaa;
+    margin-left: 15px;
+}
+
+.experience-date-separator {
+    color: #008080;
+}
+
+/* Contact */
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-email {
+    background-image: url(../images/email.png);
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 200px;
+    height: 100px;
+}
+
+.contact-phone {
+    background-image: url(../images/phone.png);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-github {
+    background-image: url(../images/github.png);
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 100px;
+}
+
+.contact-facebook {
+    background-image: url(../images/facebook.png);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
