@@ -182,3 +182,44 @@ section p {
 .skill[data-skill='10'] span {
     width: calc(100% - 2%);
 }
+
+/* Media Query */
+
+@media screen and (max-width:992px) {
+    #contact {
+        position: initial;
+        background-color: transparent;
+    }
+    #contact h3 {
+        display: block;
+    }
+    .contacts dd a {
+        text-decoration: none;
+        color: #ff3229;
+    }
+    .contacts dd {
+        color: #ff3229;
+    }
+    .contacts dt {
+        background-color: #ff3229;
+    }
+    header {
+        padding-left: 0;
+    }
+    header div {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:767px) {
+    section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    header div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
