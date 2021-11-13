@@ -13,7 +13,7 @@ hgroup h1 {
     margin-bottom: 0;
 }
 
-hgroup h2, #about h3, #contact h3, .contact-skype, .contact-type, .contact-value {
+hgroup h2, #about h3, #contact h3, .contact-skype, .contact-type, .contact-value, .experience-institution {
     display: none;
 }
 
@@ -58,11 +58,11 @@ header img {
 }
 
 .skill {
-    padding: 8px 10px;
+    padding: 12px 5px;
     margin: 3px;
     background-color: #008080;
     color: #fff;
-    width: 17%;
+    width: 150px;
 }
 
 .skills-secondary .skill {
@@ -124,10 +124,6 @@ header img {
     font-weight: normal;
 }
 
-.experience-institution::before {
-    content: '@ ';
-}
-
 .experience-details {
     color: #aaa;
     margin-left: 15px;
@@ -142,14 +138,14 @@ header img {
 .contacts {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contact-email {
     background-image: url(../images/email.png);
     background-position: center;
     background-size: cover;
-    display: block;
-    width: 200px;
+    width: 130px;
     height: 100px;
 }
 
@@ -175,4 +171,48 @@ header img {
     background-size: cover;
     width: 100px;
     height: 100px;
+}
+
+/* Media Query */
+
+@media screen and (max-width:767px) {
+    #experiences, #education, #competencies, #hobbies {
+        display: block;
+    }
+    #competencies h3, #education h3, #hobbies h3, #experiences h3 {
+        border: none;
+        margin-bottom: 40px;
+    }
+    #competencies h3::after, #education h3::after, #hobbies h3::after, #experiences h3::after {
+        content: '';
+        display: block;
+        width: 150px;
+        height: 2px;
+        background-color: black;
+    }
+    figure {
+        display: none;
+    }
+    #about p {
+        width: 100%;
+    }
+    .skills-primary, .skills-secondary {
+        margin-left: 0;
+    }
+    .skill {
+        width: 30%;
+    }
+    .experience {
+        margin-left: 0;
+    }
+    .experience-details {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .skill::after {
+        width: 100%;
+        text-align: end;
+    }
 }
