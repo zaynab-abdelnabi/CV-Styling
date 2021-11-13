@@ -103,6 +103,14 @@ section h3::before {
     margin-left: 15px;
 }
 
+.experience-location::before {
+    content: 'In';
+}
+
+.experience-date::before {
+    content: 'On';
+}
+
 .experience-date-separator {
     color: #ff3229;
 }
