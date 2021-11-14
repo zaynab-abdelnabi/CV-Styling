@@ -25,6 +25,7 @@ header img {
     top: 8%;
     right: 15%;
     transform: rotate( -15deg);
+    box-shadow: 2px 0px 15px -5px #555;
 }
 
 /* Content */
@@ -77,6 +78,7 @@ section ul {
     background-color: #008080;
     color: #fff;
     width: 150px;
+    box-shadow: 0px 0 7px -3px #555;
 }
 
 .skills-secondary .skill {
