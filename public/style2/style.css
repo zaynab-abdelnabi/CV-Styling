@@ -2,23 +2,25 @@
 body {
     font-family: 'Roboto', sans-serif;
     padding: 30px 10%;
+    background-color: #eee;
 }
 
 /* Header */
 
 hgroup h1 {
     font-weight: bold;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #aaa;
     padding: 0 0 30px 0;
     margin-bottom: 0;
 }
 
-hgroup h2, #about h3, #contact h3, .contact-skype, .contact-type, .contact-value, .experience-institution {
+hgroup h2, #about h3, #contact h3, .contact-skype, .contact-type, .experience-institution {
     display: none;
 }
 
 header img {
     width: 200px;
+    height: 200px;
     position: absolute;
     top: 8%;
     right: 15%;
@@ -26,6 +28,14 @@ header img {
 }
 
 /* Content */
+
+#about {
+    margin-top: 25px !important;
+}
+
+#about, #contact {
+    display: block;
+}
 
 #about p {
     font-style: italic;
@@ -35,14 +45,14 @@ header img {
     margin-bottom: 10%;
 }
 
-#experiences, #education, #competencies, #hobbies {
+section {
     display: grid;
     grid-template-columns: 125px auto;
     grid-template-rows: auto auto;
     margin: 50px 0;
 }
 
-#competencies h3, #education h3, #hobbies h3, #experiences h3 {
+section h3 {
     grid-row: 1/3;
     font-style: italic;
     font-weight: bold;
@@ -50,9 +60,13 @@ header img {
     margin: 0;
 }
 
+section ul {
+    color: #555;
+}
+
 /* Skills */
 
-.skills-primary, .skills-secondary {
+.skills {
     display: flex;
     margin-left: 10px;
 }
@@ -109,6 +123,7 @@ header img {
 
 .experience-description {
     grid-column: 1/3;
+    color: #555;
 }
 
 .experience h4 {
@@ -141,49 +156,49 @@ header img {
     flex-wrap: wrap;
 }
 
-.contact-email {
+/* .contact-email {
     background-image: url(../images/email.png);
     background-position: center;
     background-size: cover;
     width: 130px;
     height: 100px;
-}
+} */
 
-.contact-phone {
+/* .contact-phone {
     background-image: url(../images/phone.png);
     background-position: center;
     background-size: cover;
     width: 100px;
     height: 100px;
-}
+} */
 
-.contact-github {
-    background-image: url(../images/github.png);
+/* .contact-github {
+    background-image: url(../images/github-new.png);
     background-position: center;
     background-size: cover;
     width: 130px;
     height: 100px;
-}
+} */
 
-.contact-facebook {
+/* .contact-facebook {
     background-image: url(../images/facebook.png);
     background-position: center;
     background-size: cover;
     width: 100px;
     height: 100px;
-}
+} */
 
 /* Media Query */
 
 @media screen and (max-width:767px) {
-    #experiences, #education, #competencies, #hobbies {
+    section {
         display: block;
     }
-    #competencies h3, #education h3, #hobbies h3, #experiences h3 {
+    section h3 {
         border: none;
         margin-bottom: 40px;
     }
-    #competencies h3::after, #education h3::after, #hobbies h3::after, #experiences h3::after {
+    section h3::after {
         content: '';
         display: block;
         width: 150px;
@@ -196,7 +211,7 @@ header img {
     #about p {
         width: 100%;
     }
-    .skills-primary, .skills-secondary {
+    .skills {
         margin-left: 0;
     }
     .skill {
@@ -210,7 +225,7 @@ header img {
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:460px) {
     .skill::after {
         width: 100%;
         text-align: end;
