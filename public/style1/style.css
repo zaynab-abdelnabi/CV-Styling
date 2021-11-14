@@ -236,11 +236,14 @@ section p {
     }
     .contacts dd {
         color: #d1362f;
+        margin: 5px;
     }
     .contacts dt {
         background-color: #d1362f;
         margin-left: 0;
         text-align: start;
+        margin: 3px;
+        border-radius: 30px;
     }
     header {
         padding-left: 0;
