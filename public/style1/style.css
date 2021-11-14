@@ -170,43 +170,43 @@ section p {
 }
 
 .skill[data-skill='1'] span {
-    width: calc(10% - 2%);
+    width: calc(10% - 5%);
 }
 
 .skill[data-skill='2'] span {
-    width: calc(20% - 2%);
+    width: calc(20% - 5%);
 }
 
 .skill[data-skill='3'] span {
-    width: calc(30% - 2%);
+    width: calc(30% - 5%);
 }
 
 .skill[data-skill='4'] span {
-    width: calc(40% - 2%);
+    width: calc(40% - 5%);
 }
 
 .skill[data-skill='5'] span {
-    width: calc(50% - 2%);
+    width: calc(50% - 5%);
 }
 
 .skill[data-skill='6'] span {
-    width: calc(60% - 2%);
+    width: calc(60% - 5%);
 }
 
 .skill[data-skill='7'] span {
-    width: calc(70% - 2%);
+    width: calc(70% - 5%);
 }
 
 .skill[data-skill='8'] span {
-    width: calc(80% - 2%);
+    width: calc(80% - 5%);
 }
 
 .skill[data-skill='9'] span {
-    width: calc(90% - 2%);
+    width: calc(90% - 5%);
 }
 
 .skill[data-skill='10'] span {
-    width: calc(100% - 2%);
+    width: calc(100% - 5%);
 }
 
 /* Media Query */
