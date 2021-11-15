@@ -126,6 +126,11 @@ section ul {
 .experience-description {
     grid-column: 1/3;
     color: #555;
+    line-height: 1.5rem;
+}
+
+ul.experience-description {
+    padding-left: 5%;
 }
 
 .experience h4 {
@@ -203,7 +208,7 @@ section ul {
     section h3::after {
         content: '';
         display: block;
-        width: 150px;
+        width: 130px;
         height: 2px;
         background-color: black;
     }
